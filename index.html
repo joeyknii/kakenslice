@@ -1,139 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kakenslice - Premium Cake Shop</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kakenslice | Modern Cake Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">🍰 Kakenslice</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="container nav-wrap">
+        <div class="logo">🍰 Kakenslice</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cakes">Cakes</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#enroll">Enroll</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Kakenslice</h1>
-            <p>Handcrafted cakes made with love and the finest ingredients</p>
-            <button class="cta-button">Order Now</button>
+    <header id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">✨ Premium custom cakes in Accra</div>
+          <h1>Modern cakes for your sweetest milestones</h1>
+          <p class="muted">
+            Select, customize, and send your cake request directly on WhatsApp.
+          </p>
+          <div class="cta-row">
+            <a href="#order" class="btn btn-primary">Customize Cake</a>
+            <a href="#enroll" class="btn btn-secondary">Enroll for Classes</a>
+          </div>
         </div>
+        <img id="heroImage" class="hero-image" alt="Hero cake display" />
+      </div>
+    </header>
+
+    <section id="cakes" class="section">
+      <div class="container">
+        <h2>Signature Collection</h2>
+        <p class="muted">All prices are shown in <strong>GHS</strong>.</p>
+        <div class="cards" id="cakeCards"></div>
+      </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Our Signature Cakes</h2>
-            
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image chocolate"></div>
-                    <h3>Chocolate Delight</h3>
-                    <p>Rich, decadent chocolate cake with smooth ganache</p>
-                    <div class="price">$45</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image strawberry"></div>
-                    <h3>Strawberry Dream</h3>
-                    <p>Fresh strawberries with fluffy vanilla sponge</p>
-                    <div class="price">$50</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image vanilla"></div>
-                    <h3>Classic Vanilla</h3>
-                    <p>Timeless favorite with buttercream frosting</p>
-                    <div class="price">$40</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image matcha"></div>
-                    <h3>Matcha Elegance</h3>
-                    <p>Green tea matcha with white chocolate cream</p>
-                    <div class="price">$55</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image lemon"></div>
-                    <h3>Lemon Sunshine</h3>
-                    <p>Zesty lemon cake with tangy lemon buttercream</p>
-                    <div class="price">$42</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image redvelvet"></div>
-                    <h3>Red Velvet Romance</h3>
-                    <p>Elegant red velvet with cream cheese frosting</p>
-                    <div class="price">$48</div>
-                </div>
+    <section id="order" class="section">
+      <div class="container">
+        <h2>Customize &amp; Place Request</h2>
+        <div class="form-card">
+          <div class="order-grid">
+            <div class="form-field">
+              <label for="cakeSelect">Select Cake</label>
+              <select id="cakeSelect"></select>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Kakenslice</h2>
-                    <p>Since 2023, Kakenslice has been dedicated to creating memorable moments through exceptional cakes. Every cake is crafted by hand using premium ingredients and time-honored techniques.</p>
-                    <p>We believe that great cakes are more than just desserts—they're celebrations of life's sweetest moments. Whether it's a birthday, wedding, or special gathering, we're here to make it unforgettable.</p>
-                    <ul class="features">
-                        <li>✓ Locally sourced ingredients</li>
-                        <li>✓ Custom designs available</li>
-                        <li>✓ Delivery & catering services</li>
-                        <li>✓ Dietary options (vegan, gluten-free)</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="placeholder-image">🎂</div>
-                </div>
+            <div class="form-field">
+              <label for="size">Size</label>
+              <select id="size">
+                <option>6 inch</option>
+                <option>8 inch</option>
+                <option>10 inch</option>
+                <option>2-tier</option>
+              </select>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>📍 Location</h3>
-                        <p>123 Sweet Street<br>Bakery District<br>Your City, ST 12345</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>📞 Phone</h3>
-                        <p>(555) 123-4567</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>📧 Email</h3>
-                        <p>hello@kakenslice.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>🕐 Hours</h3>
-                        <p>Mon-Fri: 9am - 6pm<br>Sat-Sun: 10am - 5pm</p>
-                    </div>
-                </div>
+            <div class="form-field">
+              <label for="flavor">Flavor</label>
+              <input
+                id="flavor"
+                type="text"
+                placeholder="Chocolate, Vanilla, Red Velvet"
+              />
             </div>
+            <div class="form-field">
+              <label for="design">Design Style</label>
+              <input id="design" type="text" placeholder="Minimalist, Floral, Cartoon" />
+            </div>
+            <div class="form-field">
+              <label for="message">Cake Message</label>
+              <input id="message" type="text" placeholder="Happy Birthday Ama" />
+            </div>
+            <div class="form-field">
+              <label for="date">Event Date</label>
+              <input id="date" type="date" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="notes">Extra specifications/notes</label>
+            <textarea
+              id="notes"
+              placeholder="Allergies, color palette, reference theme, delivery note"
+            ></textarea>
+          </div>
+          <button id="whatsappBtn" class="btn btn-primary" type="button">
+            Place Request on WhatsApp
+          </button>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Where artistry meets flavor</h2>
+          <p class="muted">
+            Every cake is handcrafted and fully customizable to your occasion.
+          </p>
+        </div>
+        <img id="aboutImage" class="about-image" alt="Cake artist decorating a cake" />
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <div class="contact-card">
+          <h2>Contact Us</h2>
+          <p><strong>Phone:</strong> <span id="phones"></span></p>
+          <p><strong>Email:</strong> <a id="emailLink" href="#"></a></p>
+          <p><strong>Location:</strong> <span id="locationText"></span></p>
+        </div>
+        <div class="map-card">
+          <iframe
+            id="mapFrame"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Business Location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="enroll" class="section">
+      <div class="container">
+        <h2>Enroll for Cake Classes</h2>
+        <p class="muted">Fill this form and submit directly by email.</p>
+        <form id="enrollForm" class="form-card" novalidate>
+          <div class="order-grid">
+            <div class="form-field">
+              <label for="studentName">Full Name</label>
+              <input id="studentName" required />
+            </div>
+            <div class="form-field">
+              <label for="studentEmail">Email</label>
+              <input id="studentEmail" type="email" required />
+            </div>
+            <div class="form-field">
+              <label for="studentPhone">Phone</label>
+              <input id="studentPhone" required />
+            </div>
+            <div class="form-field">
+              <label for="courseLevel">Class Level</label>
+              <select id="courseLevel">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="availability">Availability</label>
+            <textarea id="availability" placeholder="Preferred days and times"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit Enrollment</button>
+        </form>
+      </div>
+    </section>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Kakenslice. All rights reserved. Made with ❤️ and flour.</p>
-        </div>
+      <div class="container">© 2026 Kakenslice · Crafted with butter, berries, and love.</div>
     </footer>
-</body>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
