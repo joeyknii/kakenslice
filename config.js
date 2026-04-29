@@ -1,11 +1,11 @@
 window.KAKENSLICE_CONFIG = {
   currency: 'GHS',
-  whatsappNumber: '233201234567',
+  whatsappNumber: '233543900989',
   contact: {
-    phones: ['+233 20 123 4567', '+233 24 987 6543'],
-    email: 'hello@kakenslice.com',
-    locationText: 'East Legon, Accra, Ghana',
-    mapEmbedUrl: 'https://www.google.com/maps?q=East%20Legon%2C%20Accra&output=embed'
+    phones: ['+233 54 390 0989', '+233 59 516 6379'],
+    email: 'kakenslice@gmail.com',
+    locationText: 'Beach Drive, Nungua, Accra - Ghana',
+    mapEmbedUrl: 'https://maps.app.goo.gl/NYvsSaYe5fnfrB3y6'
   },
   images: {
     hero: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=80',
